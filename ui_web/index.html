@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="/liuzi.js"></script>
+    <script>
+      var liuzi = Module;
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <div class="board">
+      <svg>
+        <g transform="translate(1,1)">
+          <line
+            x1="0"
+            y1="0"
+            x2="450"
+            y2="0"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="0"
+            y1="150"
+            x2="450"
+            y2="150"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="0"
+            y1="300"
+            x2="450"
+            y2="300"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="0"
+            y1="450"
+            x2="450"
+            y2="450"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="450"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="150"
+            y1="0"
+            x2="150"
+            y2="450"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="300"
+            y1="0"
+            x2="300"
+            y2="450"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="450"
+            y1="0"
+            x2="450"
+            y2="450"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+        </g>
+      </svg>
+    </div>
+    <div class="human-piece"><span>你的棋子是：</span><span>黑方</span></div>
+    <div class="button-area">
+      <button class="button-undo">悔棋</button>
+      <button class="button-ai">AI</button>
+      <button class="button-reset">重置</button>
+      <button class="button-switch">切换</button>
+    </div>
+    <div class="game-rule">
+      <p>规则：</p>
+      <p>
+        移动一颗棋子后，在这颗棋子的上下左右四个方向出现两颗己方棋子对一颗敌方棋子时，吃掉敌方的那一颗棋子。
+      </p>
+    </div>
+  </body>
+</html>

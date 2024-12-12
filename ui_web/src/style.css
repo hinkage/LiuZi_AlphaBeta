@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+.human-piece {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 650px;
+  left: 50px;
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.button-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 700px;
+  left: 50px;
+  width: 600px;
+  height: 50px;
+}
+
+.button-reset,
+.button-undo,
+.button-ai,
+.button-switch {
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  font-size: 20px;
+}
+
+.board {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 600px;
+  height: 600px;
+  outline: solid red 1px;
+}
+
+.game-rule {
+  position: absolute;
+  top: 50px;
+  left: 700px;
+  width: 600px;
+  height: 600px;
+  outline: solid blue 1px;
+  font-size: 20px;
+}
+
+.board > svg {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  width: 452px;
+  height: 452px;
+  pointer-events: none;
+}
+
+.piece {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.piece.clicked {
+  width: 135px;
+  height: 135px;
+}
+
+.piece.black {
+  background-color: black;
+}
+
+.piece.white {
+  background-color: white;
+}
